@@ -1,0 +1,42 @@
+{
+  "name": "clsxtw",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A tiny utility to merge Tailwind classes without conflicts using clsx and tailwind-merge",
+  "author": "Damiano Barbati <damiano.barbati@gmail.com> (https://github.com/damianobarbati)",
+  "repository": "https://github.com/damianobarbati/clsxtw",
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=24.14",
+    "pnpm": ">=10.30.3"
+  },
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "types": "./src/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "postinstall": "pnpm audit --audit-level critical",
+    "lint": "biome check --write --unsafe",
+    "test": "node --test --test-reporter=spec ./src/*.spec.js"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8"
+  },
+  "peerDependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.1"
+  },
+  "keywords": [
+    "clsx",
+    "tailwind",
+    "tailwind-merge"
+  ]
+}
