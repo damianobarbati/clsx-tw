@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import cx from 'clsxtw';
+import cx from '#root/index.js';
 
 describe('clsxtw utility', () => {
   it('should merge basic strings and resolve tailwind conflicts', () => {
