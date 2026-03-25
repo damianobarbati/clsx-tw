@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import cx from '#root/index.js';
 
-describe('clsxtw utility', () => {
+describe('clsx-tw utility', () => {
   it('should merge basic strings and resolve tailwind conflicts', () => {
     const result = cx('p-4 p-12 bg-red-500');
     assert.strictEqual(result, 'p-12 bg-red-500');

@@ -1,4 +1,4 @@
-# clsxtw
+# clsx-tw
 
 The utility you always end up writing yourself.  
 It simply merges `clsx` and `tailwind-merge` into one default export.
@@ -8,13 +8,13 @@ Was it really that hard to bake this functionality directly into clsx?
 ## Installation
 
 ```sh
-pnpm add clsxtw
+pnpm add clsx-tw
 ```
 
 ## Usage
 
 ```jsx
-import cx from 'clsxtw';
+import cx from 'clsx-tw';
 
 const className = cx(
   'p-4 bg-red-500',
