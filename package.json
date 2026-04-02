@@ -1,6 +1,6 @@
 {
   "name": "clsx-tw",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "description": "A tiny utility to merge Tailwind classes without conflicts using clsx and tailwind-merge",
   "author": "Damiano Barbati <damiano.barbati@gmail.com> (https://github.com/damianobarbati)",
