@@ -26,12 +26,12 @@
     "src"
   ],
   "scripts": {
-    "postinstall": "pnpm audit --audit-level critical",
-    "lint": "biome check --write --unsafe",
+    "prepare": "pnpm audit --audit-level critical",
+    "lint": "biome check --write",
     "test": "node --test --test-reporter=spec ./src/*.spec.js"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.8"
+    "@biomejs/biome": "^2.4.10"
   },
   "peerDependencies": {
     "clsx": "^2.1.1",
